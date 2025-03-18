@@ -109,14 +109,14 @@ Send list of files based on previous request
 | File list | JSON formatted list of files including names (path), size, and user who is hosting it |
 
 ##### Verify-success
-Response to [`Verify-client`](#####Verify-client)
+Response to [`Verify-client`](#Verify-client)
 Indicate success
 
 | Field name | Description |
 | :---       | :---        |
 
 ##### Verify-fail
-Response to [`Verify-client`](#####Verify-client)
+Response to [`Verify-client`](#Verify-client)
 Indicate failure with reason
 
 | Field name | Description |
@@ -202,7 +202,7 @@ This is sent while the host is receiving a previously requested file and it did 
 | Name | Length (Bytes) | Type | Description |
 | :--- | :---           | :--- | :---        |
 | Type | 1 | Enum | Specifies message type |
-| Conn ID | 8 | Bytes | Specfies connection ID sent in [`Request-acknowledge`](#####Request-acknowledge) |
+| Conn ID | 8 | Bytes | Specfies connection ID sent in [`Request-acknowledge`](#Request-acknowledge) |
 | Packet num | 8 | Int32 | Specifies the which packet this is in order |
 | Len | 4 | Int16 | Specifies length of this packet |
 | Body | As specified by Len | Bytes | Main message body |
